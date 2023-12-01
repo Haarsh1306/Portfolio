@@ -3,16 +3,38 @@
   color: white;
 }
 .elem{
+  position: relative;
   width: 85%;
   border-top: 1px solid #888;
   padding: 3.5vw 0 ;
   margin-left: 2vw;
+  
+}
+.elem h1{
+  text-transform: uppercase;
+  font-size: 4vw;
+  opacity: 0.7;
+}
+
+.elem .heading{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.elem h1{
-  text-transform: uppercase;
-  font-size: 7.5vw;
+.elem li{
   opacity: 0.7;
+  margin: 1px 0;
+  font-size: 1.5vw;
 }
+
+.elemlast{
+  border-bottom: 1px solid #888;
+}
+.elem img{
+  display: none;
+  height: 140%;
+  width: 35%;
+  position: absolute;
+  z-index: 99;
+}
+
