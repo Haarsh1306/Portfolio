@@ -15,7 +15,15 @@ animation(){
     y:0,
     duration:2,
     ease:Expo.easeInOut,
-    stagger: .2
+    stagger: .2,
+    delay:-1
+  })
+  .from(".footer",{
+    y:-10,
+    opacity:0,
+    delay:-1,
+    ease:Expo.easeInOut,
+    duration: 1.5,
   })
 }
 ngOnInit(): void {

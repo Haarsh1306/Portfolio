@@ -10,11 +10,30 @@ export class AppComponent implements AfterViewInit {
   title = 'frontend';
   scroll: any;
   flag:boolean=true;
-  cicleMouseFollower(){
+
+  circleskew(){
+    var xScale=1;
+    var yScale =1;
+
+    var xPrev =0;
+    var yPrev =0;
+    window.addEventListener("mousemove",(e)=>{
+      var xDiff = e.clientX - xPrev;
+      xPrev = e.clientX;
+
+      var yDiff = e.clientY - yPrev;
+      yPrev = e.clientY;
+
+      xScale= gsap.utils.clamp(0.8,1.2,xDiff)
+      yScale = gsap.utils.clamp(0.8,1.2,yDiff)
+      this.cicleMouseFollower(xScale, yScale)
+    })
+  }
+  cicleMouseFollower(xScale:number, yScale:number){
     window.addEventListener("mousemove",(e)=>{
       this.flag=false
       let circle = document.querySelector(".miniCircle") as HTMLElement
-      circle.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`
+      circle.style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(${xScale},${yScale})`
     })
   }
 
@@ -32,7 +51,7 @@ export class AppComponent implements AfterViewInit {
       console.error('Scroll container not found');
     }
 
-    this.cicleMouseFollower()
+    this.circleskew()
 
 
     
