@@ -2,9 +2,17 @@
   width: 100%;
   height: 100vh;
   color: white;
+  position: relative;
   
 }
+.bounding{
+  width: fit-content;
+  overflow: hidden;
+}
 
+.bounding .boundingElem{
+  transform: translatey(100%);
+}
 .heading{
   margin-top: 90px;
   
@@ -15,7 +23,7 @@
   line-height: 1;
   opacity: .7;
   margin-left: 2vw;
-  /* font-weight: 900; */
+  
 }
 
 .heading #secondH1{
@@ -24,6 +32,9 @@
 
 .blocktxt{
   width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 .blocktxt h5{
   font-size: 15px;
@@ -34,6 +45,9 @@
 .sideHeading{
   margin-top: 100px;
   padding-right: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 .sideHeading h5{
   margin-top: .5vw;
