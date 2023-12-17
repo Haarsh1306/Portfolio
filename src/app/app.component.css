@@ -9,3 +9,14 @@
   border-radius: 50%;
   position: absolute;
 }
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 1000; 
+}
+
+
+

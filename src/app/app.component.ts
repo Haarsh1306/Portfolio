@@ -45,6 +45,8 @@ export class AppComponent implements AfterViewInit {
     })
   }
 
+  
+
   constructor() {}
 
   ngAfterViewInit() {
@@ -55,15 +57,35 @@ export class AppComponent implements AfterViewInit {
         el: scrollContainer,
         smooth: true
       });
+
+      
+
     } else {
       console.error('Scroll container not found');
     }
 
     this.circleskew()
-
-
-    
+   
+    document.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('mouseenter', (ele) => {
+        gsap.to(a.querySelector('::before'), {
+          width: '100%',
+          duration: 0.5,
+          ease: 'power2.inOut'
+        });
+      });
+  
+      a.addEventListener('mouseleave', (e) => {
+        gsap.to(a.querySelector('::before'), {
+          width: '0',
+          duration: 0.5,
+          ease: 'power2.inOut'
+        });
+      });
+    });
   }
+
+ 
 
   
   

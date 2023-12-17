@@ -13,12 +13,12 @@ animation(){
 
  t1.to(".boundingElem",{
     y:0,
-    duration:2,
+    duration:3,
     ease:Expo.easeInOut,
     stagger: .2,
     delay:-1
   })
-  .from(".footer",{
+  .from(".footerHome",{
     y:-10,
     opacity:0,
     delay:-1,
