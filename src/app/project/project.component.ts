@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { gsap, Expo, Power1 } from 'gsap';
+import { Router } from '@angular/router';
 import LocomotiveScroll from 'locomotive-scroll';
 @Component({
   selector: 'app-project',
@@ -7,11 +8,21 @@ import LocomotiveScroll from 'locomotive-scroll';
   styleUrls: ['./project.component.css']
 })
 export class ProjectComponent implements OnInit , AfterViewInit{
-constructor(){
+constructor( private router:Router){
   
 }
 scroll:any
 
+openMoshify(){
+  window.open('https://webmoshify.onrender.com/')
+}
+
+openWhatsAppChat(){
+  window.open('https://whatsappchatanalyzer-zye8.onrender.com/')
+}
+openFyle(){
+  window.open("https://fyle-internship-challenge-23-eight.vercel.app/")
+}
 imageHover(){
   document.querySelectorAll('.elem').forEach((ele)=>{
     var rotate=0;
@@ -24,7 +35,6 @@ imageHover(){
       
       gsap.to(ele.querySelector('img'),{
         opacity:1,
-        
         top: diff,
         left:event.clientX,
         rotate: gsap.utils.clamp(-20,20,rotateDiff)
