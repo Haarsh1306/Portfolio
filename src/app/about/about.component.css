@@ -36,6 +36,7 @@ img{
   font-size: 12px;
   border-radius: 100px;
   text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .textAbout button{
@@ -48,4 +49,16 @@ img{
   font-size: 12px;
   border-radius: 100px;
   text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.textAbout button:hover{
+  background-color: white;
+  color: black;
+}
+
+.textAbout a:hover{
+  background-color: white;
+  color: black;
 }
