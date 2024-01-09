@@ -16,6 +16,9 @@ scroll:any
 openMoshify(){
   window.open('https://webmoshify.onrender.com/')
 }
+openQrify(){
+  window.open('https://q-rify-five.vercel.app/')
+}
 
 openWhatsAppChat(){
   window.open('https://whatsappchatanalyzer-zye8.onrender.com/')
