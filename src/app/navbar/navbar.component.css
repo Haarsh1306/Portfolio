@@ -2,6 +2,7 @@
   color: white;
   text-decoration: none;
   font-size: 18px;
+  
 }
 
 .nav{
@@ -12,4 +13,31 @@
   align-items: center;
   justify-content: space-between;
 
+}
+
+h4 span{
+  color: #FF8733;
+  position: relative;
+}
+
+h4 span::before{
+  content: "";
+  position: absolute;
+  right: -8px;
+  height: 15px;
+  width: 2px;
+  background-color: #FF8733;
+  transform: translateY(-45%);
+  top: 50%;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50%{
+    opacity: 0;
+  }
+}
+
+h4 span.stop-blink::before{
+  animation: none;
 }
