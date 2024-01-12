@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ProjectComponent } from './project/project.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
+import { SkillsComponent } from './skills/skills.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
     ProjectComponent,
     AboutComponent,
     FooterComponent,
+    SkillsComponent,
     
   ],
   imports: [
