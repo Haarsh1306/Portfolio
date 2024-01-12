@@ -1,6 +1,28 @@
-.skill{
+.skills{
     margin-top: 10vw;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 10w 4vw;
+    /* padding: 20px; */
+}
+
+.skill{
+    display: flex;
+    flex: 0 0 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill img{
+    width: 70px;
+    /* aspect-ratio: 3/2; */
+}
+
+.skill h4{
+    color: white;
+    text-transform: uppercase;
 }
