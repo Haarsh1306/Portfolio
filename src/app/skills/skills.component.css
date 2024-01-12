@@ -1,28 +1,28 @@
-.skills{
-    margin-top: 10vw;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px 0px;
     justify-content: center;
-    margin: 10w 4vw;
-    /* padding: 20px; */
+    align-items: center;
+    margin: 10vw 4vw;
 }
 
-.skill{
+.skill {
     display: flex;
-    flex: 0 0 20%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    text-align: center;
+    width: 100%; 
 }
 
-.skill img{
+.skill img {
     width: 70px;
-    /* aspect-ratio: 3/2; */
 }
 
-.skill h4{
+.skill h4 {
     color: white;
     text-transform: uppercase;
+    margin: 0;
 }
