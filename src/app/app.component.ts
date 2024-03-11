@@ -1,5 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
-import LocomotiveScroll from 'locomotive-scroll';
+
+// import LocomotiveScroll from 'locomotive-scroll';
 
 @Component({
   selector: 'app-root',
@@ -13,58 +14,59 @@ export class AppComponent implements AfterViewInit {
 
   timeout:any;
 
-  circleskew(){
-    var xScale=1;
-    var yScale =1;
+  // circleskew(){
+  //   var xScale=1;
+  //   var yScale =1;
 
-    var xPrev =0;
-    var yPrev =0;
-    window.addEventListener("mousemove",(e)=>{
-      clearTimeout(this.timeout)
-      var xDiff = e.clientX - xPrev;
-      xPrev = e.clientX;
+  //   var xPrev =0;
+  //   var yPrev =0;
+  //   window.addEventListener("mousemove",(e)=>{
+  //     clearTimeout(this.timeout)
+  //     var xDiff = e.clientX - xPrev;
+  //     xPrev = e.clientX;
 
-      var yDiff = e.clientY - yPrev;
-      yPrev = e.clientY;
+  //     var yDiff = e.clientY - yPrev;
+  //     yPrev = e.clientY;
 
-      xScale= gsap.utils.clamp(0.8,1.2,xDiff)
-      yScale = gsap.utils.clamp(0.8,1.2,yDiff)
-      this.cicleMouseFollower(xScale, yScale)
+  //     xScale= gsap.utils.clamp(0.8,1.2,xDiff)
+  //     yScale = gsap.utils.clamp(0.8,1.2,yDiff)
+  //     this.cicleMouseFollower(xScale, yScale)
 
-      this.timeout = setTimeout(function(){
-        let circle = document.querySelector(".miniCircle") as HTMLElement
-        circle.style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(1,1)`
-      },100)
-    })
-  }
-  cicleMouseFollower(xScale:number, yScale:number){
-    window.addEventListener("mousemove",(e)=>{
-      this.flag=false
-      let circle = document.querySelector(".miniCircle") as HTMLElement
-      circle.style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(${xScale},${yScale})`
-    })
-  }
+  //     this.timeout = setTimeout(function(){
+  //       let circle = document.querySelector(".miniCircle") as HTMLElement
+  //       circle.style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(1,1)`
+  //     },100)
+  //   })
+  // }
+  // cicleMouseFollower(xScale:number, yScale:number){
+  //   window.addEventListener("mousemove",(e)=>{
+  //     this.flag=false
+  //     let circle = document.querySelector(".miniCircle") as HTMLElement
+  //     circle.style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(${xScale},${yScale})`
+  //   })
+  // }
 
   
 
   constructor() {}
 
   ngAfterViewInit() {
-    const scrollContainer = document.querySelector('.page');
+    // const scrollContainer = document.querySelector('.page');
 
-    if (scrollContainer instanceof HTMLElement) {
-      this.scroll = new LocomotiveScroll({
-        el: scrollContainer,
-        smooth: true
-      });
+    // if (scrollContainer instanceof HTMLElement) {
+    //   this.scroll = new LocomotiveScroll({
+    //     el: scrollContainer,
+    //     smooth: true,
+    //   });
 
       
 
-    } else {
-      console.error('Scroll container not found');
-    }
+    // } else {
+    //   console.error('Scroll container not found');
+    // }
 
-    this.circleskew()
+    // this.circleskew()
+
    
     document.querySelectorAll('a').forEach((a) => {
       a.addEventListener('mouseenter', (ele) => {

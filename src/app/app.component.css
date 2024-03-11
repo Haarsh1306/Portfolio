@@ -1,11 +1,7 @@
-@import 'locomotive-scroll/dist/locomotive-scroll.css';
-@import '~locomotive-scroll/dist/locomotive-scroll.css';
 .page {
   margin: 0;
-  padding-bottom: 164px;
- 
 }
-.miniCircle{
+/* .miniCircle{
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
   width: 10px;
   height: 10px;
@@ -13,7 +9,8 @@
   z-index: 9999;
   border-radius: 50%;
   position: absolute;
-}
+  
+} */
 .navbar{
   position: fixed;
   top: 0;

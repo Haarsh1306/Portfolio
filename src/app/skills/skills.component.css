@@ -1,10 +1,22 @@
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vw;
+    opacity: 0.7;
+}
+.heading h1{
+    color: white;
+    text-transform: uppercase;
+}
+
 .skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 100px 0px;
     justify-content: center;
     align-items: center;
-    margin: 10vw 4vw;
+    margin: 5vw 4vw;
 }
 
 .skill {
