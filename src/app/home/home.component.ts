@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { gsap, Expo } from 'gsap';
 
 @Component({
@@ -7,44 +7,44 @@ import { gsap, Expo } from 'gsap';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-constructor(){}
-onArrowClick(){
-  const scrollAmount = 700; 
+  @Output() scrollToAbout: EventEmitter<any> = new EventEmitter();
+  constructor(){}
+  onArrowClick(){
+    const scrollAmount = 700; 
 
- 
-  window.scrollBy({
-    top: scrollAmount,
-    behavior: 'smooth'
-  });
-}
-onArrowClickMore(){
-  const scrollAmount = 2350; 
+  
+    window.scrollBy({
+      top: scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+  onArrowClickMore(){
+    const scrollAmount = 2350; 
+    window.scrollBy({
+      top: scrollAmount,
+      behavior: 'smooth' 
+    });
+    this.scrollToAbout.emit();
+  }
+  animation(){
+    let t1 = gsap.timeline()
 
- 
-  window.scrollBy({
-    top: scrollAmount,
-    behavior: 'smooth' 
-  });
-}
-animation(){
-  let t1 = gsap.timeline()
-
- t1.to(".boundingElem",{
-    y:0,
-    duration:3,
-    ease:Expo.easeInOut,
-    stagger: .2,
-    delay:-1
-  })
-  .from(".footerHome",{
-    y:-10,
-    opacity:0,
-    delay:-1.5,
-    ease:Expo.easeInOut,
-    duration: 2,
-  })
-}
-ngOnInit(): void {
-  this.animation()
-}
+  t1.to(".boundingElem",{
+      y:0,
+      duration:3,
+      ease:Expo.easeInOut,
+      stagger: .2,
+      delay:-1
+    })
+    .from(".footerHome",{
+      y:-10,
+      opacity:0,
+      delay:-1.5,
+      ease:Expo.easeInOut,
+      duration: 2,
+    })
+  }
+  ngOnInit(): void {
+    this.animation()
+  }
 }

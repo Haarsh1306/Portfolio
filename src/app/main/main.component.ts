@@ -1,4 +1,5 @@
-import { Component , AfterViewInit} from '@angular/core';
+import { Component , AfterViewInit,ViewChild, ElementRef} from '@angular/core';
+
 
 
 @Component({
@@ -7,7 +8,7 @@ import { Component , AfterViewInit} from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent  {
-
+  
   
   
 }
