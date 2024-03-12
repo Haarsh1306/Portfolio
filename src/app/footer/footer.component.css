@@ -19,6 +19,11 @@
   font-weight: 600;
   position: relative;
 }
+.right i{
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
 
 a::before, h5::before{
   content: "";
@@ -45,13 +50,19 @@ a:hover::before, h5:hover::before {
     align-items: center;
     padding: 20px; 
   }
-
-  .left, .right {
+  .left{
+    /* visibility: hidden; */
+    display: none;
+  }
+  .right {
     flex-direction: column;
     align-items: center;
     gap: 20px; 
   }
 
+  /* .right{
+    margin-top: 20px;
+  } */
   
   .right a, .right h5 {
     font-size: 12px; 
