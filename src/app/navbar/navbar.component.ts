@@ -8,7 +8,7 @@ import { gsap, Expo } from 'gsap';
 export class NavbarComponent implements OnInit{
 constructor(){}
 animation(){
-  var t1 = gsap.timeline()
+  let t1 = gsap.timeline()
 
   t1.from(".nav",{
     y:-10,

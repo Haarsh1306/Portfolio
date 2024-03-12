@@ -9,7 +9,7 @@ import { gsap, Expo } from 'gsap';
 export class HomeComponent implements OnInit {
 constructor(){}
 animation(){
-  var t1 = gsap.timeline()
+  let t1 = gsap.timeline()
 
  t1.to(".boundingElem",{
     y:0,

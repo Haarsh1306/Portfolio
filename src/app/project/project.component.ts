@@ -28,13 +28,13 @@ openFyle(){
 }
 imageHover(){
   document.querySelectorAll('.elem').forEach((ele)=>{
-    var rotate=0;
-    var rotateDiff =0;
+    let rotate=0;
+    let rotateDiff =0;
     ele.addEventListener('mousemove',function(e){
-      var event = e as MouseEvent
+      let event = e as MouseEvent
       rotateDiff = event.clientX - rotate;
       rotate = event.clientX;
-      var diff = event.clientY - ele.getBoundingClientRect().top
+      let diff = event.clientY - ele.getBoundingClientRect().top
       
       gsap.to(ele.querySelector('img'),{
         opacity:1,
