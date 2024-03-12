@@ -4,29 +4,23 @@
   align-items: center;
   padding: 20px 30px;
   color: white;
-  /* background-color: red; */
 }
 
-.left{
+.left, .right{
   display: flex;
   gap: 30px;
 }
 
-.right{
-  display: flex;
-  gap: 30px;
-}
-.right a, h5{
+.right a, .right h5{
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
   position: relative;
-
 }
 
-a::before ,h5::before{
+a::before, h5::before{
   content: "";
   position: absolute;
   bottom: -3px;
@@ -42,4 +36,24 @@ a::before ,h5::before{
 a:hover::before, h5:hover::before {
   transform-origin: left;
   transform: scaleX(1);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; 
+  }
+
+  .left, .right {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+  }
+
+  
+  .right a, .right h5 {
+    font-size: 12px; 
+  }
 }
