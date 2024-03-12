@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-text:number;
+ text:number=0;
  constructor(){
-  let date = new Date()
-  this.text = date.getTime()
+  setInterval(() => {
+    let date = new Date();
+    this.text = date.getTime(); 
+  }, 10);
+  
  }
 }
