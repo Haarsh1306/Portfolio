@@ -8,6 +8,24 @@ import { gsap, Expo } from 'gsap';
 })
 export class HomeComponent implements OnInit {
 constructor(){}
+onArrowClick(){
+  const scrollAmount = 700; 
+
+ 
+  window.scrollBy({
+    top: scrollAmount,
+    behavior: 'smooth'
+  });
+}
+onArrowClickMore(){
+  const scrollAmount = 2500; 
+
+ 
+  window.scrollBy({
+    top: scrollAmount,
+    behavior: 'smooth' 
+  });
+}
 animation(){
   let t1 = gsap.timeline()
 
