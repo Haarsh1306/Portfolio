@@ -23,7 +23,7 @@ animation(){
     opacity:0,
     delay:-1,
     ease:Expo.easeInOut,
-    duration: 1.5,
+    duration: 1,
   })
 }
 ngOnInit(): void {
