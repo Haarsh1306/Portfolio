@@ -21,9 +21,9 @@ animation(){
   .from(".footerHome",{
     y:-10,
     opacity:0,
-    delay:-1,
+    delay:-1.5,
     ease:Expo.easeInOut,
-    duration: 1,
+    duration: 2,
   })
 }
 ngOnInit(): void {
