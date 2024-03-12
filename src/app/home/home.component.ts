@@ -18,7 +18,7 @@ onArrowClick(){
   });
 }
 onArrowClickMore(){
-  const scrollAmount = 2500; 
+  const scrollAmount = 2350; 
 
  
   window.scrollBy({
