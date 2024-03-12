@@ -54,9 +54,12 @@
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
+    .heading{
+        margin-top: 15vw;
+    }
     .skills {
         gap: 50px 0px; 
-        margin: 5vw 2vw; 
+        margin: 10vw 2vw; 
     }
 
     .skills img{
