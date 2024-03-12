@@ -122,6 +122,10 @@
 @media (max-width: 768px) {
   .heading{
     margin-top: 40vw;
-    
+    padding-top: 10vw;
   }
+  .sideHeading h5{
+    font-size: 2.5vw;
+  }
+  
 }
