@@ -57,8 +57,10 @@ imageHoverLeave(){
   })
 }
 ngOnInit(): void {
-  this.imageHover()
-  this.imageHoverLeave()
+  if (window.matchMedia("(min-width: 769px)").matches) {
+    this.imageHover();
+    this.imageHoverLeave();
+  }
   
 }
 
