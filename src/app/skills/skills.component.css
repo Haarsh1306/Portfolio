@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8vw;
+    margin-top: 120px;
     opacity: 0.7;
 }
 
@@ -54,9 +54,9 @@
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-    .heading{
+    /* .heading{
         margin-top: 15vw;
-    }
+    } */
     .skills {
         gap: 50px 0px; 
         margin: 10vw 2vw; 
