@@ -118,3 +118,9 @@
   transform: rotate(45deg);
   
 }
+
+@media (max-width: 768px) {
+  .heading{
+    margin-top: 35vw;
+  }
+}
