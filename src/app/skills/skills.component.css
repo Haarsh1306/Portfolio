@@ -57,6 +57,9 @@
     /* .heading{
         margin-top: 15vw;
     } */
+    .heading{
+        margin-top: 80px;
+    }
     .skills {
         gap: 50px 0px; 
         margin: 10vw 2vw; 
