@@ -29,6 +29,9 @@ openFyle(){
 openBlogKaro(){
   window.open("https://blog-karo-q9qc.vercel.app/")
 }
+openFlightUpdate(){
+  window.open("https://indigohack-frontend-olive.vercel.app/")
+}
 imageHover(){
   document.querySelectorAll('.elem').forEach((ele)=>{
     let rotate=0;
