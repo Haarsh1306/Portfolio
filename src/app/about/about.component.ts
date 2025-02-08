@@ -3,19 +3,18 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./about.component.css'],
 })
 export class AboutComponent {
-  about: string = `I'm Harsh Verma, a final year B.Tech. student in Computer Engineering with a specialization in Data Science. I'm also a passionate software developer with experience as a Software Engineer Trainee at Chromeinfotech, Noida.
+  about: string =
+    `I am a Software Development Engineer (SDE 1) at Amazon, passionate about full stack development and building impactful software solutions. As a 2024 graduate, I have worked extensively with React, TypeScript, Node.js, and Django, gaining hands-on experience in full-stack development.
 
-  As a full-stack MERN developer, I enjoy crafting user-friendly and data-driven web applications.In my free time, I build personal projects to explore new technologies and hone my skills. I'm particularly interested in full-stack development.
+    Before joining Amazon, I completed software development internships at Airtel, ChromeInfotech, and WorkIndia, where I contributed to scalable applications and deepened my technical expertise.
 
-  I'm always eager to learn and grow as a developer. If you're looking for a talented and enthusiastic full-stack developer, I'd love to connect ! Feel free to reach out to me at or connect with me on LinkedIn.`.replace(/\n/g, '<br>');
-  constructor(){
-
-  }
-  downloadResume(){
-    const pdfPath = "../../assets/Resume_HarshVerma.pdf";
+    I am highly passionate about software development and love building things that make a difference. Always eager to learn and grow, I thrive on solving complex problems and exploring new technologies.`.replace(/\n/g, '<br>');
+  constructor() { }
+  downloadResume() {
+    const pdfPath = '../../assets/Resume_HarshVerma.pdf';
     const link = document.createElement('a');
     link.href = pdfPath;
     link.download = 'Resume_HarshVerma.pdf';

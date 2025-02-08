@@ -32,6 +32,9 @@ openBlogKaro(){
 openFlightUpdate(){
   window.open("https://indigohack-frontend-olive.vercel.app/")
 }
+openGyanTherapy(){
+  window.open("https://gyantherapy.in/")
+}
 imageHover(){
   document.querySelectorAll('.elem').forEach((ele)=>{
     let rotate=0;
